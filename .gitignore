@@ -1,3 +1,4 @@
+# Maven target directory
 target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
@@ -36,3 +37,19 @@ build/
 
 ### Mac OS ###
 .DS_Store
+
+### SQLite DB files ###
+*.sqlite
+*.db
+*.db3
+*.sqlite3
+
+### Log files ###
+*.log
+logs/
+
+### Temp files ###
+*.tmp
+*.swp
+*.bak
+*.orig
