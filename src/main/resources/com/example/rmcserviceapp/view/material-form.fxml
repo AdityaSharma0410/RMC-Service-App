@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.Insets?>
+
+<GridPane xmlns:fx="http://javafx.com/fxml"
+          fx:controller="com.example.rmcserviceapp.controller.MaterialFormController"
+          hgap="10" vgap="10">
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20" />
+    </padding>
+    <Label text="Order Number:" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+    <TextField fx:id="orderField" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+
+    <!-- Dust -->
+    <Label text="Dust - Set Weight:" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+    <TextField fx:id="dustSetField" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+    <Label text="Dust - Actual Weight:" GridPane.rowIndex="1" GridPane.columnIndex="2"/>
+    <TextField fx:id="dustActualField" GridPane.rowIndex="1" GridPane.columnIndex="3"/>
+
+    <!-- Aggregate -->
+    <Label text="Aggregate - Set Weight:" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+    <TextField fx:id="aggSetField" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+    <Label text="Aggregate - Actual Weight:" GridPane.rowIndex="2" GridPane.columnIndex="2"/>
+    <TextField fx:id="aggActualField" GridPane.rowIndex="2" GridPane.columnIndex="3"/>
+
+    <!-- Cement -->
+    <Label text="Cement - Set Weight:" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+    <TextField fx:id="cementSetField" GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+    <Label text="Cement - Actual Weight:" GridPane.rowIndex="3" GridPane.columnIndex="2"/>
+    <TextField fx:id="cementActualField" GridPane.rowIndex="3" GridPane.columnIndex="3"/>
+
+    <Button text="Save" onAction="#handleSave" GridPane.rowIndex="5" GridPane.columnIndex="3">
+        <GridPane.margin>
+            <Insets top="10" right="10" bottom="10" left="10" />
+        </GridPane.margin>
+    </Button>
+</GridPane>

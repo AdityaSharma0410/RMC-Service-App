@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml">
+    <TabPane layoutX="0" layoutY="0" prefHeight="600" prefWidth="800">
+        <tabs>
+            <Tab text="Customer Entry">
+                <fx:include source="customer-form.fxml"/>
+            </Tab>
+            <Tab text="Material Entry">
+                <fx:include source="material-form.fxml"/>
+            </Tab>
+            <Tab text="Reports">
+                <fx:include source="report-view.fxml"/>
+            </Tab>
+        </tabs>
+    </TabPane>
+</AnchorPane>

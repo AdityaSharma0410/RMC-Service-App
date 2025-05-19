@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox spacing="10" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.rmcserviceapp.controller.ReportController">
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20" />
+    </padding>
+    <HBox spacing="10">
+        <Label text="Order No:"/>
+        <TextField fx:id="orderFilterField"/>
+        <Label text="Date:"/>
+        <DatePicker fx:id="dateFilterField"/>
+        <Button text="Filter" onAction="#handleFilter"/>
+        <Button text="Show All" onAction="#handleShowAll"/>
+    </HBox>
+
+    <TableView fx:id="reportTable" prefHeight="400">
+        <columns>
+            <TableColumn fx:id="orderCol" text="Order No"/>
+            <TableColumn fx:id="nameCol" text="Customer Name"/>
+            <TableColumn fx:id="dateCol" text="Date"/>
+            <TableColumn fx:id="siteCol" text="Site Name"/>
+        </columns>
+    </TableView>
+</VBox>
